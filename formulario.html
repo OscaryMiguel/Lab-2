@@ -1,0 +1,71 @@
+﻿<html>
+	<head> 
+	<title>Formulario de prueba</title>
+	<script>
+			function vervalores(){ 
+				var sAux="";
+				var frm = document.getElementById("registro");
+				for (i=0;i<frm.elements.length;i++)
+				{ sAux += "NOMBRE: " + frm.elements[i].name + " ";
+				  sAux += "VALOR: " + frm.elements[i].value + "\n" ;
+				} 
+				alert(sAux);
+				} 
+				
+		</script>
+			
+	</head>
+	<body>
+		<h2>Formulario de Registro</h2> 
+		<form id='registro' name='registro' onSubmit='vervalores()'> 
+			<table>
+				<tr>
+					<td>Nombre*: </td> <td>
+					<input type="text" name="Nombre"> </td>
+					<td>Nickname: </td> <td>
+					<input type="text" name="Nickname" size="10"> </td>
+				</tr>				
+				<tr>
+					<td>Apellidos*: </td> <td>
+					<input type="text" name="Apellidos"> </td>
+					<td>Contrase&ntildea*: </td> <td>
+					<input type = "password" name= "Password1"> </td>
+				</tr>
+				<tr>
+					<td>Email*: </td> <td>
+					<input type="text" name="Mail"> </td>
+					<td>Confirmar contrase&ntildea: </td> <td>
+					<input type = "password" name= "Password2"> </td>
+				</tr>
+				<tr>
+					<td>Sexo: </td> <td>
+					<select name="sexo" size="1">
+					<option>Hombre</option>
+					<option>Mujer</option>
+					<option>Otro</option>
+					</select> </td>
+					<td>N&uacutemero de tel&eacutefono*:</td> <td>
+					<input type="number" name="telefono" size="9"> </td>
+				</tr>
+				<tr>
+				<td>Especialidad*: </td> <td>
+					<select name="especialidad" size="1">
+					<option>Ing. del Software</option>
+					<option>Ing. de Computadores</option>
+					<option>Computaci&oacuten</option>
+					</select> </td>
+				</tr>
+
+			<tr>
+				<td>Selecciona un Avatar</td> 
+				<input type=file size=60 name="file1"><br><br>
+			</tr>	
+		<tr>
+			<input type="submit" value="Registrarse">
+			
+		</tr>
+					</table>
+					</form>
+					</body>
+					</html>
+		
